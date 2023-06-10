@@ -74,7 +74,7 @@ cacheRemoteImages = false
   # Hosted on (HTML format is supported)
   # 托管服务信息 (支持 HTML 格式)
   # <a title="Github Pages" href="https://docs.github.com/en/pages/" target="_blank" rel="noopener noreffer">GitHub Pages</a>
-  hostedOn = '' 
+  hostedOn = ''
   # whether to show copyright info
   # 是否显示版权信息
   copyright = true
@@ -300,6 +300,7 @@ cacheRemoteImages = false
     Weixin = ""
     Whatsapp = false
     Xing = false
+    Mastodon = true
   # Comment config
   # 评论系统设置
   [page.comment]
@@ -403,6 +404,7 @@ cacheRemoteImages = false
       envId = "https://twikoo-comments-doit.vercel.app/"
       region = ""
       path = ""
+      cloudbase = true # boolean : true / false. # 是否部署在腾讯云 CloudBase
       visitor = true
       commentCount = true
     # Vssue comment config (https://vssue.js.org//)
@@ -440,6 +442,17 @@ cacheRemoteImages = false
       lightTheme = "light"
       darkTheme = "dark"
       dataLang = "en"
+    # artalk comment config (https://artalk.js.org/guide/frontend/config.html)
+    # artalk comment 评论系统设置 (https://artalk.js.org/guide/frontend/config.html)
+    [page.comment.artalk]
+      enable = false
+      server = ""
+      site = ""
+      lite = false
+      katex = false
+      lightbox = false
+      pageview = true
+      commentCount = true
   # Third-party library config
   # 第三方库配置
   [page.library]
